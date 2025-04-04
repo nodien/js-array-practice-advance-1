@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 2</title>
+</head>
+<body>
+<h1>Max value and its index</h1>
+<p>Open the console to see the result.</p>
+<script>
+    const numbers = [4, 18, 9, 33, 21, 14, 27, 3, 11, 6];
+    let max = numbers[0];
+    let index = 0;
+
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+            index = i;
+        }
+    }
+
+    console.log("Max value:", max);
+    console.log("Index:", index);
+</script>
+</body>
+</html>

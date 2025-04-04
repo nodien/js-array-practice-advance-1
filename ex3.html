@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 3</title>
+</head>
+<body>
+<h1>Max and Average of Array</h1>
+<p>Open the console to see the result.</p>
+<script>
+    const numbers = [8, 5, 12, 20, 7, 15, 4, 9, 11, 6];
+    let max = numbers[0];
+    let sum = 0;
+
+    for (let num of numbers) {
+        if (num > max) max = num;
+        sum += num;
+    }
+
+    const average = sum / numbers.length;
+
+    console.log("Max value:", max);
+    console.log("Average:", average);
+</script>
+</body>
+</html>
